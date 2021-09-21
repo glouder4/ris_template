@@ -1,0 +1,128 @@
+#catalog_header{
+    height: 75vh;
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    background-attachment: fixed;
+}
+#catalog_header>.container{
+    position: relative;
+    z-index: 2;
+}
+#catalog_header::before{
+	content: ' ';
+    height: 100%;
+    background-image: -webkit-gradient( linear, left top, left bottom, from(rgba(0,0,0,0.5)), to(rgba(0,0,0,0.4)) );
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.5), rgba(0,0,0,0.4));
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.5), rgba(0,0,0,0.4));
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    transform: translateZ(0);
+}
+
+#catalog_header h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-family: 'Roboto',Arial,sans-serif;
+    line-height: 1.55;
+    font-weight: 700;
+    background-position: center center;
+    border-color: transparent;
+    border-style: solid;
+}
+#breadcrumbs, #fast_links{
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: 'Roboto',Arial,sans-serif;
+    line-height: 1.55;
+}
+#fast_links{
+    border-bottom: 1px solid silver;
+}
+#fast_links .tag{
+    padding: 10px;
+    color: black;
+    box-shadow: 0px 3px 20px rgb(0 0 0 / 25%), 0 -1px 10px rgb(0 0 0 / 22%);
+}
+#breadcrumbs a,#fast_links a{
+    color: rgb(255, 164, 28) !important;
+    text-decoration: none;
+}
+#categorie_posts img{
+    width: 100%!important;
+    height: 100%!important;
+
+    max-width: 285px;
+    max-height: 325px;
+    object-fit: cover;
+}
+#catalog_page_template .btn{
+    color: #ffa41c;
+    border: 2px solid #ffa41c;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    max-width: 215px;
+
+    transition: all 0.6s ease;
+}
+
+#catalog_page_template .btn.bg-transparent:hover {
+    background-color: #ffa41c !important;
+    color: #ffffff !important;
+    border-color: #ffa41c !important;
+    box-shadow: 0px 0px 5px 0px rgb(0 0 0 / 70%) !important;
+}
+
+#catalog_page_template .btn.bg-reverse{
+    background-color: #ffa41c;
+    color: white;
+}
+
+.catalog_page_badge{
+    color: black;
+}
+#badge .catalog_page_badge.green{
+    color: #2dd52d;
+}
+#badge .catalog_page_badge.red{
+    color: red;
+}
+
+.catalog_item .image_block{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.image_block .image_badge{
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    right: 5px;
+    width:155px;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: white;
+}
+.image_block .image_badge.green{
+    background-color: #2dd52d;
+}
+.image_block .image_badge.red{
+    background-color: red;
+}
+
+@media(min-width: 768px){
+    #catalog_header,#catalog_header::before{
+        height: 65vh;
+    }
+}

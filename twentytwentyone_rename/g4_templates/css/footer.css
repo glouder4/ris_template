@@ -1,0 +1,68 @@
+#faq_list{
+	background-color: #ededed;
+	padding-bottom: 80px;
+}
+#faq_list .accordion-item{
+	border-top: 1px solid #ffa41c;
+	border-left: 0;
+	border-right: 0;
+}
+#faq_list .accordion-item:last-child{
+	border-bottom: 1px solid #ffa41c;
+}
+#faq_list .accordion-button{
+	background-color: white;
+}
+#faq_list .accordion-button:hover,#faq_list .accordion-button:focus,#faq_list .accordion-button:active{
+	outline: none;
+	box-shadow: none;
+}
+#faq_list .accordion-item h2{
+	font-size: 20px;
+	font-family: 'Roboto',Arial,sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+#devider{
+	margin-top: -70px;
+}
+#map{
+	position: relative;
+}
+#map #map_data{
+	position: absolute;
+	z-index: 1;
+
+	width: 35%;
+	padding: 15px;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,0.6);
+	top: 15px;
+	left: 50px;
+
+	color: white;
+}
+#map #map_data3{
+	position: absolute;
+	z-index: 1;
+
+	width: 35%;
+	padding: 15px;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,0.6);
+	top: 15px;
+	right: 15px;
+
+	color: white;
+}
+#map .map_point a{
+	color: white;
+	text-decoration: none;
+}
+#map .map_point a:hover{
+	cursor: pointer;
+}
+#footer_feedback .decor{
+	padding: 15px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
